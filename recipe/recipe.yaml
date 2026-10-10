@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "1.0.0"
+  version: "1.1.0"
 
 package:
   name: hypertools
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/h/hypertools/hypertools-${{ version }}.tar.gz
-  sha256: 2cd7752bbcd3d9e5d282592443e3a216c05d38fabe5415232beaa534d252b99a
+  sha256: 054c783704a01086b4c0082bf2b58b128601076bfc7c910ea155b389c589a954
 
 build:
   noarch: python
@@ -23,19 +23,20 @@ requirements:
     - setuptools >=77
   run:
     - python >=${{ python_min }}
-    - scikit-learn >=1.4.2
-    - pandas >=2.2.2
+    - scikit-learn >=1.5.2
+    - pandas >=2.2.3
     - seaborn >=0.13.0
-    - matplotlib-base >=3.9.0
-    - scipy >=1.13.0
-    - numpy >=2.0.0
+    - pillow >=10.4.0
+    - matplotlib-base >=3.9.2
+    - scipy >=1.14.1
+    - numpy >=2.1.0
     - umap-learn >=0.5.5
     - numba >=0.61.0
     - requests >=2.31.0
     - dill >=0.3.8
     - ipympl >=0.9.3
     - pykalman >=0.11
-    - statsmodels >=0.14
+    - statsmodels >=0.14.3
     - pydata-wrangler >=0.5.1
 
 tests:
