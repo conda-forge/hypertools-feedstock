@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "1.2.0"
+  version: "1.2.1"
 
 package:
   name: hypertools
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/h/hypertools/hypertools-${{ version }}.tar.gz
-  sha256: b1ba6eb4d59c8d2f2460783ce28d05665da378cf7db1c7f404e83621af55e125
+  sha256: 18d6019c459e93305e28c70cf53c4f4ed0e35988c55595578892e87b816aa40f
 
 build:
   noarch: python
